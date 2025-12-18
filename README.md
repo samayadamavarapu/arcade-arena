@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+# Game of Games
 
-## How can I edit this code?
+A **bright, neon arcade-style web app** featuring multiple classic mini-games built with **React, TypeScript, Vite, and Tailwind CSS**.
+Enjoy vibrant gradients, glowing cards, playful animations, and smooth transitions between games.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## ✏️ How to Run Locally
 
-Changes made via Lovable will be committed automatically to this repo.
+### Requirements
 
-**Use your preferred IDE**
+* Node.js
+* npm (or use nvm for managing Node versions)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Steps
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open your browser at `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🧠 Tech Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* ⚡ **Vite**
+* 🟦 **TypeScript**
+* ⚛️ **React**
+* 🎨 **Tailwind CSS**
+* 🧩 **shadcn/ui**
+* ✨ CSS animations & transitions
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🕹 Included Games
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* **Tic Tac Toe**
 
-## How can I deploy this project?
+  * 2-player mode
+  * Optional AI opponent
+* **Snake Game**
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+  * Keyboard controls
+  * Increasing speed
+  * Score tracking
+* **Rock Paper Scissors**
 
-## Can I connect a custom domain to my Lovable project?
+  * Player vs computer
+* **Memory Card Match**
 
-Yes, you can!
+  * Animated card flipping
+  * Match detection
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
