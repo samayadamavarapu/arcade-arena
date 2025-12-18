@@ -158,7 +158,7 @@ const SnakeGame = () => {
 
         {/* Game Board */}
         <div
-          className="relative bg-card rounded-2xl border-2 border-neon-green/50 box-glow-green overflow-hidden"
+          className="relative bg-card rounded-2xl border-2 border-neon-green box-glow-green overflow-hidden shadow-lg"
           style={{
             width: GRID_SIZE * CELL_SIZE + 4,
             height: GRID_SIZE * CELL_SIZE + 4,
@@ -166,7 +166,7 @@ const SnakeGame = () => {
         >
           {/* Grid Background */}
           <div
-            className="absolute inset-0 opacity-10"
+            className="absolute inset-0 opacity-20"
             style={{
               backgroundImage: "linear-gradient(hsl(var(--neon-green)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--neon-green)) 1px, transparent 1px)",
               backgroundSize: `${CELL_SIZE}px ${CELL_SIZE}px`,

@@ -6,54 +6,54 @@
 
 @layer base {
   :root {
-    --background: 240 20% 8%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 98%;
+    --foreground: 240 20% 15%;
 
-    --card: 240 15% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 20% 15%;
 
-    --popover: 240 15% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 20% 15%;
 
-    --primary: 320 100% 60%;
+    --primary: 320 90% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 190 100% 50%;
-    --secondary-foreground: 240 20% 8%;
+    --secondary: 190 90% 45%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 10% 20%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 240 10% 92%;
+    --muted-foreground: 240 10% 45%;
 
-    --accent: 80 100% 50%;
-    --accent-foreground: 240 20% 8%;
+    --accent: 80 85% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 25%;
-    --input: 240 10% 25%;
-    --ring: 320 100% 60%;
+    --border: 240 10% 88%;
+    --input: 240 10% 88%;
+    --ring: 320 90% 55%;
 
     --radius: 1rem;
 
-    /* Custom arcade colors */
-    --neon-pink: 320 100% 60%;
-    --neon-cyan: 190 100% 50%;
-    --neon-green: 80 100% 50%;
-    --neon-yellow: 50 100% 55%;
-    --neon-purple: 270 100% 65%;
-    --neon-orange: 25 100% 55%;
+    /* Custom arcade colors - vibrant for light theme */
+    --neon-pink: 320 90% 55%;
+    --neon-cyan: 190 90% 45%;
+    --neon-green: 145 85% 40%;
+    --neon-yellow: 45 95% 50%;
+    --neon-purple: 270 85% 55%;
+    --neon-orange: 25 95% 55%;
 
     /* Gradients */
-    --gradient-arcade: linear-gradient(135deg, hsl(320 100% 60%) 0%, hsl(270 100% 65%) 50%, hsl(190 100% 50%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(240 15% 15%) 0%, hsl(240 15% 10%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(320 100% 60% / 0.3) 0%, transparent 70%);
+    --gradient-arcade: linear-gradient(135deg, hsl(320 90% 55%) 0%, hsl(270 85% 55%) 50%, hsl(190 90% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(240 10% 96%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(320 90% 95%) 0%, hsl(190 90% 95%) 50%, hsl(80 85% 95%) 100%);
 
-    /* Shadows */
-    --shadow-neon-pink: 0 0 20px hsl(320 100% 60% / 0.5), 0 0 40px hsl(320 100% 60% / 0.3);
-    --shadow-neon-cyan: 0 0 20px hsl(190 100% 50% / 0.5), 0 0 40px hsl(190 100% 50% / 0.3);
-    --shadow-neon-green: 0 0 20px hsl(80 100% 50% / 0.5), 0 0 40px hsl(80 100% 50% / 0.3);
-    --shadow-neon-purple: 0 0 20px hsl(270 100% 65% / 0.5), 0 0 40px hsl(270 100% 65% / 0.3);
+    /* Shadows - colorful for light theme */
+    --shadow-neon-pink: 0 4px 20px hsl(320 90% 55% / 0.35), 0 2px 8px hsl(320 90% 55% / 0.2);
+    --shadow-neon-cyan: 0 4px 20px hsl(190 90% 45% / 0.35), 0 2px 8px hsl(190 90% 45% / 0.2);
+    --shadow-neon-green: 0 4px 20px hsl(145 85% 40% / 0.35), 0 2px 8px hsl(145 85% 40% / 0.2);
+    --shadow-neon-purple: 0 4px 20px hsl(270 85% 55% / 0.35), 0 2px 8px hsl(270 85% 55% / 0.2);
   }
 }
 
@@ -78,15 +78,15 @@
   }
 
   .text-glow-pink {
-    text-shadow: 0 0 10px hsl(var(--neon-pink)), 0 0 20px hsl(var(--neon-pink) / 0.5);
+    text-shadow: 0 2px 10px hsl(var(--neon-pink) / 0.5);
   }
 
   .text-glow-cyan {
-    text-shadow: 0 0 10px hsl(var(--neon-cyan)), 0 0 20px hsl(var(--neon-cyan) / 0.5);
+    text-shadow: 0 2px 10px hsl(var(--neon-cyan) / 0.5);
   }
 
   .text-glow-green {
-    text-shadow: 0 0 10px hsl(var(--neon-green)), 0 0 20px hsl(var(--neon-green) / 0.5);
+    text-shadow: 0 2px 10px hsl(var(--neon-green) / 0.5);
   }
 
   .box-glow-pink {
@@ -113,6 +113,10 @@
     background: var(--gradient-card);
   }
 
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
   }
@@ -132,8 +136,8 @@
     filter: brightness(1);
   }
   50% {
-    opacity: 0.8;
-    filter: brightness(1.2);
+    opacity: 0.9;
+    filter: brightness(1.1);
   }
 }
 
